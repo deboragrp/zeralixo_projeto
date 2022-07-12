@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7; */
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    top: 400px; 
+    background: #007AFF;
+    border-radius: 6px;
+}
+
+/* .login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+} */
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #606C38;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #007AFF;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.sub-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.subinputs {
+    display: flex;
+    align-items: center;
+}
+
+.subinputs input {
+    margin-right: 0.35rem;
+}
+
+.subinputs label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+
+/* botão login */
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    margin-top: 60px;
+
+}
+
+.login-button button {
+    background-color: #007AFF;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 54%;
+}
+
+.login-button button:hover{
+    background-color: #0769d3;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* botão login google */
+.bottons-google {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 360px;
+height: 40px;
+background: #000;
+border-radius: 6px;
+margin-top: 100px;
+
+
+}
+
+.bottons-google button {
+    background-color: #000;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 54%;
+}
+
+.bottons-google button:hover{
+    background-color: #000;
+}
+
+.bottons-google button {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .input-group {
+        margin-top: 2rem;
+    }
+    .sub-inputs {
+        flex-direction: column;
+    }
+    .h4 {
+        margin: 0;
+    }
+    .subinputs {
+        margin-top: 0.5rem;
+    }
+}
