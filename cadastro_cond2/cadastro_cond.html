@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS only-->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="mb-0" class="p-3 text-white" style="background-color:#283618;">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <object data="ZERALIXO LOGO (1).svg" width="70" height="70" viewBox="0 0 50 50" fill="none"> </object>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Como funciona</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Contato</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-white" style="background-color:#283618 ;"
+            placeholder="Procure..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-light">Cadastre-se</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Header-->
+
+  <div class="card-body">
+    <div class="form">
+      <form>
+        <div class="formheader">
+          <h1>Cadastre seu Condomínio</h1>
+        </div>
+        <div class="inputgroup">
+          <div class="inputbox">
+            <input type="text" id="firstname" name="firstname" placeholder="Nome do prédio/condomínio" required>
+          </div>
+          <div class="inputbx">
+            <div class="inp">
+              <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+            </div>
+            <div class="cid">
+              <input type="text" id="cep" name="cep" placeholder="CEP" required>
+            </div>
+          </div>
+          <div class="inputbx">
+            <div class="cid br">
+              <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+            </div>
+            <div class="inp">
+              <input type="text" id="number" name="number" placeholder="Nº" required>
+            </div>
+          </div>
+          <div class="inputbx">
+            <div class="inp">
+              <input type="text" id="estado" name="estado" placeholder="Estado">
+            </div>
+            <div class="cid">
+              <input type="select" id="cidade" name="cidade" placeholder="Cidade" required>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="cadastro-button">
+        <button type="button" class="login-button-text">
+          <a href="#">Cadastre-se</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS bundle with popper-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
